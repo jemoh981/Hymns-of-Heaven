@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hymns of Heaven | Catholic Songs</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo-container">
+      <img src="logo.png" alt="hymns of heaven logo" class="logo">
+    </div>
+    <div class="logo-text">
+      <h1>Hymns of Heaven</h1>
+      <p class="tagline">Songs that lift souls to Heaven</p>
+    </div>
+    <nav id="navMenu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#genres">Genres</a></li>
+        <li><a href="#lyrics">Lyrics</a></li>
+        <li><a href="#massReadings">Mass Readings</a></li>
+        <li><a href="#prayers">Prayers</a></li>
+        <li><a href="#submit">Submit Song</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" id="menuToggle">☰</div>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Welcome to Catholic Hymns</h1>
+    <h2>“Sing to the Lord a new song” (Psalm 96:1)</h2>
+    <p>Find lyrics for Hymns • Marian • Praise • Lenten • Christmas & more. A Treasury of Faith.</p>
+
+    <div class="search-area">
+      <input type="text" id="searchInput" placeholder="Search by song title or lyrics snippet..." />
+      <button id="searchBtn">🔍 Search</button>
+    </div>
+
+    <div class="filter-area">
+      <select id="genreSelect">
+        <option value="">All Genres</option>
+        <option value="mass">Mass Hymns</option>
+        <option value="marian">Marian Songs</option>
+        <option value="praise">Praise & Worship</option>
+        <option value="lenten">Lenten Songs</option>
+        <option value="eucharist">Eucharistic Songs</option>
+        <option value="advent">Advent Songs</option>
+        <option value="christmas">Christmas Songs</option>
+        <option value="thanksgiving">Thanksgiving Songs</option>
+      </select>
+      <button class="cta" id="browseBtn">Browse Genres</button>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="song-of-day section">
+    <h2>🎵 Song of the Day: Halleluya!</h2>
+    <div class="song-box" id="songOfDayBox">
+      <h3 id="songTitle">Amazing Grace</h3>
+      <p id="songCategory">Genre: Thanksgiving/General Hymn | Artist: Traditional</p>
+      <pre id="songLyrics">
+Amazing grace! how sweet the sound,
+That saved a wretch like me!
+I once was lost, but now am found,
+Was blind, but now I see.
+
+'Twas grace that taught my heart to fear,
+And grace my fears relieved;
+How precious did that grace appear
+The hour I first believed!
+      </pre>
+      <audio id="songAudio" controls>
+          <source src="Amazing grace   latest  best version  with lyrics original.mp3" type="audio/mp3">
+      </audio>
+      <button id="shareBtn" class="cta-share">📤 Share Lyrics to WhatsApp</button>
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="genres" class="section">
+    <h2>Popular Catholic Song Genres</h2>
+    <p>Dive into our curated collection categorized by liturgical season and theme.</p>
+    <div class="genre-grid">
+      <div class="genre-card mass" data-genre="mass">Mass Hymns</div>
+      <div class="genre-card marian" data-genre="marian">Marian Songs</div>
+      <div class="genre-card praise" data-genre="praise">Praise & Worship</div>
+      <div class="genre-card lenten" data-genre="lenten">Lenten Songs</div>
+      <div class="genre-card eucharist" data-genre="eucharist">Eucharistic Songs</div>
+      <div class="genre-card advent" data-genre="advent">Advent Songs</div>
+      <div class="genre-card christmas" data-genre="christmas">Christmas Songs</div>
+      <div class="genre-card thanksgiving" data-genre="thanksgiving">Thanksgiving Songs</div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="lyrics" class="section">
+    <h2>🔍 Full Lyrics Collection</h2>
+    <div id="lyricsContainer" class="lyrics-list">
+      <p>Loading the complete collection of hymns...</p>
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="massReadings" class="section">
+    <h2>📖 Daily Mass Readings (USCCB Feed)</h2>
+    <p class="subtitle">Feast of the Day: <span id="feastDay">Loading...</span></p>
+    <div id="readingsContent" class="readings-content">
+        <div id="reading1" class="reading-card">Loading First Reading...</div>
+        <div id="gospel" class="reading-card">Loading Gospel Reading...</div>
+    </div>
+    <p class="fetch-note">
+        <a href="https://bible.usccb.org/daily-bible-reading" target="_blank" class="cta-link">Read today's Mass Readings at USCCB.org →</a>
+    </p>
+  </section>
+
+  <hr>
+
+  <section id="prayers" class="section">
+    <h2>🙏 Catholic Prayers & Devotions</h2>
+    <p class="subtitle">Nourish your soul with daily prayer.</p>
+    <div class="prayer-grid">
+        <div class="prayer-card">
+          <h3>The Hail Mary</h3>
+          <p>Hail Mary, full of grace, the Lord is with thee; blessed art thou amongst women, and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.</p>
+        </div>
+        <div class="prayer-card">
+          <h3>The Angelus</h3>
+          <p>The Angel of the Lord declared unto Mary. And she conceived of the Holy Spirit... Prayed at 6 a.m., noon, and 6 p.m.</p>
+        </div>
+        <div class="prayer-card">
+            <h3>Apostles' Creed</h3>
+            <p>I believe in God, the Father almighty, Creator of heaven and earth...</p>
+        </div>
+        <div class="prayer-card">
+            <h3>Prayer Before Meals</h3>
+            <p>Bless us, O Lord, and these Thy gifts, which we are about to receive from Thy bounty, through Christ our Lord. Amen.</p>
+        </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="submit" class="section">
+    <h2>Submit a Song</h2>
+    <p class="subtitle">Share a hymn or song with the community!</p>
+    <form id="submitForm">
+      <input type="text" id="songTitleInput" placeholder="Song Title (e.g., Agnus Dei)" required />
+      <input type="text" id="songAuthorInput" placeholder="Author/Source (Optional)" />
+      <select id="songGenreInput" required>
+        <option value="" disabled selected>Select Genre</option>
+        <option value="mass">Mass Hymn</option>
+        <option value="marian">Marian Song</option>
+        <option value="praise">Praise & Worship</option>
+        <option value="lenten">Lenten Song</option>
+        <option value="eucharist">Eucharistic Song</option>
+        <option value="advent">Advent Song</option>
+        <option value="christmas">Christmas Song</option>
+        <option value="thanksgiving">Thanksgiving Song</option>
+      </select>
+      <textarea id="songLyricsInput" placeholder="Paste the full, correct lyrics here..." rows="8" required></textarea>
+      <button type="submit" class="cta">Add Song to LyricVault</button>
+      <p id="submitMessage" class="hidden success-msg"></p>
+    </form>
+  </section>
+
+  <hr>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p class="subtitle">Have a question or suggestion? Reach out!</p>
+    <form id="contactForm">
+      <input type="text" id="contactName" placeholder="Your Name" required />
+      <textarea id="contactMsg" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit" class="cta contact-btn">Send Message (WhatsApp/Messenger)</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hymns of Heaven | Catholic Songs. Designed with ✝️ Faith & ❤️ Love by skylink-digital-works <strong>0795077967</strong></p>
+    <button id="scrollTop">↑ Top</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
