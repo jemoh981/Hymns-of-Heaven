@@ -105,7 +105,7 @@ nav ul li a:hover {
 }
 
 .hero {
-    background-image: url('images/stained_glass_bg.jpg'); 
+    background-image: url('eucharist.jpg'); 
     background-size: cover;
     background-position: center;
     color: var(--color-light-text);
@@ -380,4 +380,5 @@ footer {
     .hero {
         padding: 50px 5%;
     }
+
 }
